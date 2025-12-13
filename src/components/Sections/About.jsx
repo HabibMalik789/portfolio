@@ -39,22 +39,26 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="d-flex flex-wrap flex-md-nowrap">
-          <a href={aboutData.cvpath} className="btn btn-default me-2">
-            <i className="icon-cloud-download"></i>Download CV
-          </a>
-          <ScrollLink
-            activeClass="active"
-            to="section-contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={50}
-            className="btn btn-alt"
-          >
-            <i className="icon-envelope"></i>Hire me
-          </ScrollLink>
-        </div>
+       <div className="d-flex flex-wrap flex-md-nowrap">
+  <a
+    href={aboutData.cvpath}
+    className="btn btn-default me-2 mb-2 mb-md-0"
+  >
+    <i className="icon-cloud-download"></i> Download CV
+  </a>
+  <ScrollLink
+    activeClass="active"
+    to="section-contact"
+    spy={true}
+    smooth={true}
+    duration={500}
+    offset={50}
+    className="btn btn-alt"
+  >
+    <i className="icon-envelope"></i> Hire me
+  </ScrollLink>
+</div>
+
       </div>
     </div>
   );

@@ -3,10 +3,10 @@ import Portfolio from "../Items/Portfolio";
 
 const filters = [
   { id: 1, name: "All Projects" },
-  { id: 2, name: "HTML/CSS" },
-  { id: 3, name: "React" },
-  { id: 4, name: "Node.js" },
-  { id: 5, name: "WP/Wix" },
+  // { id: 2, name: "HTML/CSS" },
+  // { id: 3, name: "React" },
+  // { id: 4, name: "Node.js" },
+  // { id: 5, name: "WP/Wix" },
 ];
 
 const allData = [
@@ -154,7 +154,7 @@ function Portfolios() {
       </ul>
 
       {/* MOBILE FILTER DROPDOWN */}
-      <div className="pf-filter-wrapper mb-4">
+      {/* <div className="pf-filter-wrapper mb-4">
         <select
           className="portfolio-filter-mobile"
           onChange={(e) => handleChange(e)}
@@ -165,7 +165,7 @@ function Portfolios() {
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
 
       {/* PORTFOLIO GRID */}
       <div className="row portfolio-wrapper">
