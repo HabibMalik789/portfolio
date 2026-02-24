@@ -11,7 +11,7 @@ import {
 const headerData = {
   name: "hm4 design",
   designation: "Web Developer",
-  imageThumb: "/images/logo.png",
+  imageThumb: process.env.PUBLIC_URL + "/images/logo.png",
   social: {
     fiverr: "https://www.fiverr.com/hm4design",
     github: "https://github.com/HabibMalik789",

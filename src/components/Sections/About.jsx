@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const aboutData = {
   cvpath: "media/cv.pdf",
-  image: "images/about-2.png",
+  image: process.env.PUBLIC_URL + "/images/about-2.PNG",
   name: "Habib Ullah",
   location: "Mianwali, Punjab",
   birthday: "30 May, 2003",

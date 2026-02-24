@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.scss";
 
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Multipage from "./pages/Multipage";
 import About from "./pages/About";
@@ -14,12 +14,9 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Switch>
         <Route path="/" component={Homepage} exact />
-        <Route path="/multipage" component={Multipage} exact />
-
-        {/* For Multipage */}
         <Route path="/multipage" component={Multipage} exact />
         <Route path="/about" component={About} exact />
         <Route path="/services" component={Services} exact />
@@ -27,7 +24,7 @@ function App() {
         <Route path="/works" component={Works} exact />
         <Route path="/contact" component={Contact} exact />
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 
